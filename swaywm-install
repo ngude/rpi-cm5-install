@@ -1,0 +1,22 @@
+# install script for swaywm and dependencies for cm5 debian including useful packages for baseline usage
+
+#!/bin/bash
+
+# require sudo
+if [ "$EUID" -ne 0 ]
+  then echo "You need root for this! Please use sudo for this script"
+  exit
+fi
+
+# update package lists
+apt update &&
+
+# install swaywm packages
+apt install -y seatd bc sway swaybg swayidle swaylock waybar wofi alacritty fonts-font-awesome swayimg qutebrowser grim slurp wl-clipboard mako-notifier chromium vlc
+
+# upgrade all installed packages
+apt full-upgrade -y &&
+
+# clean post install
+apt autoremove -y &&
+apt clean
