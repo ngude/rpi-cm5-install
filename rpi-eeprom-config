@@ -5,3 +5,5 @@
 POWER_OFF_ON_HALT=0
 
 # possible bash script usage? 
+#!/bin/bash
+echo "POWER_OFF_ON_HALT=0" >> rpi-eeprom-config
