@@ -1,2 +1,5 @@
+# run sudo rpi-eeprom-update to check version
+# run sudo rpi-eeprom-update -a to update if needed
+
 # add this line to end of file to fix fan behavior of cm5 on shutdown
 POWER_OFF_ON_HALT=0
