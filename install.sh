@@ -12,7 +12,7 @@ fi
 apt update &&
 
 # install core packages
-apt install -y git taskwarrior rustup aerc tmux cmake pipx ranger btop lynx w3m imv calcure &&
+apt install -y git ca-certificates taskwarrior rustup aerc tmux cmake pipx ranger btop lynx w3m imv calcure &&
 
 # install neovim
 git clone https://github.com/neovim/neovim.git &&
