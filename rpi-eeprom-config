@@ -1,0 +1,2 @@
+# add this line to end of file to fix fan behavior of cm5 on shutdown
+POWER_OFF_ON_HALT=0
